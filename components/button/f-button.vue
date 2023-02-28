@@ -27,7 +27,7 @@ const props = defineProps({
   label: String
 })
 const buttonClass = computed(() => ({
-  'inline-flex rounded-8 max-w-max focusable justify-center cursor-pointer py-8 px-12 i-text-$button-color-text-primary i-bg-$button-color-background-primary': true,
+  'button': true,
   // primary buttons
   'button--primary': props.primary && !props.negative,
   'button--destructive': props.primary && props.negative,

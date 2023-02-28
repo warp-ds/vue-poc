@@ -7,9 +7,8 @@ import Control from './Control.vue'
 import Controls from './Controls.vue'
 import ComponentTitle from './ComponentTitle.vue'
 import { Token } from '@itsy/token'
-import 'uno.css'
 
-setWasm('/shiki/dist/onig.wasm')
+setWasm('/shiki/dist/onigasm.wasm')
 setCDN('/shiki/')
 
 const highlighter = await getHighlighter({ theme: 'vitesse-light', langs: ['js', 'vue-html'] })
