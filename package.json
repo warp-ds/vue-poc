@@ -15,6 +15,7 @@
   },
   "scripts": {
     "cp": "mkdir -p ./dev/public/shiki && cp -r ./node_modules/shiki/{dist,languages,samples,themes} ./dev/public/shiki",
+    "cp:shikifix": "cp node_modules/.pnpm/vscode-oniguruma@1.7.0/node_modules/vscode-oniguruma/release/onig.wasm ./dev/public/shiki/dist/",
     "dev": "vite dev dev --config ./vite.config.js",
     "test": "vitest run",
     "watch": "vitest watch",
